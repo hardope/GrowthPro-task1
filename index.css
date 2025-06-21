@@ -1,0 +1,72 @@
+/* Notification container */
+.popup-alert {
+    display: block;
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    /* background: #fff; */
+    color: #222;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 20px 32px;
+    min-width: 320px;
+    z-index: 100x0;
+    animation: slideIn 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.popup-alert button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+}
+
+/* Title styling */
+#alert-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* Description styling */
+#alert-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 8px;
+}
